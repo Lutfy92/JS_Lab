@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Applicant Resumes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Applicant Resumes</h1>
+  <div id="filter-container">
+    <label for="jobFilter">Search by Job:</label>
+    <input type="text" id="jobFilter" placeholder="Enter job title...">
+    <button onclick="filterApplicants()">Search</button>
+  </div>
+  <div id="applicants-container">
+    <button onclick="showPreviousApplicant()" id="prevButton" style="display: none;">Previous</button>
+    <button onclick="showNextApplicant()" id="nextButton" style="display: none;">Next</button>
+    <div id="applicant-details">
+      <p><strong>Name:</strong> <span id="name"></span></p>
+      <p><strong>Job:</strong> <span id="job"></span></p>
+      <p><strong>Email:</strong> <span id="email"></span></p>
+      <p><strong>Phone:</strong> <span id="phone"></span></p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
